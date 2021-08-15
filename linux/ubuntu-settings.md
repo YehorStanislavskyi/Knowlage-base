@@ -1,25 +1,39 @@
+# ubuntu settings
 
+## базовые утилиты 
 
-# стандартная настройка новой машины на убунту + gnome 
-
-## уставнока gnome-tweak-tolls
-
-```
-sudo apt-get install gnome-tweak-tool
+```bash
+$ sudo apt-get install git  curl zip gnome-tweak-tool ranger vim unzip -y
 ```
 
-## NUM LOCK при старте системы 
+* curl
+* zip
+* unzip
+* gnome-tweak-tool
+* ranger
+* git
+* vim
+
+
+
+### установка gnome-tweak-tolls
+
+```text
+sudo apt-get install  
+```
+
+### NUM LOCK при старте системы
 
 ```text
 org.gnome.desktop.peripherals.keyboard remember-numlock-state true
 ```
 
-## тема иконок papirus
+### тема иконок papirus
 
-```
+```text
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt install papirus-icon-theme
 ```
 
 В tweak-tools выбрать их!
- 	
+

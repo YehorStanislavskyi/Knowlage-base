@@ -9,10 +9,8 @@ description: 'работает на  убунте 18.04, на 19.04 - и дал�
 ### Install utils
 
 ```text
-$ sudo apt-get install git mc curl zip ranger vim unzip -y
+Install Apache2.4 Web Server
 ```
-
-### Install Apache2.4 Web Server
 
 ```text
 $ sudo apt update
