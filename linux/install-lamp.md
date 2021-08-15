@@ -4,37 +4,35 @@ description: 'работает на  убунте 18.04, на 19.04 - и дал�
 
 # install lamp
 
+## Install LAMP
 
-
-### Install LAMP
-
-#### Install utils
+### Install utils
 
 ```text
 $ sudo apt-get install git mc curl zip ranger vim unzip -y
 ```
 
-#### Install Apache2.4 Web Server
+### Install Apache2.4 Web Server
 
 ```text
 $ sudo apt update
 $ sudo apt install apache2
 ```
 
-#### Add current user to server group "www-data"
+### Add current user to server group "www-data"
 
 ```text
 $ sudo chown -R $USER:www-data /var/www
 ```
 
-#### Install Mysql Server
+### Install Mysql Server
 
 ```text
 $ sudo apt install mysql-server
 $ sudo mysql_secure_installation
 ```
 
-#### Configure root mysql user
+### Configure root mysql user
 
 ```text
 $ sudo mysql
@@ -48,13 +46,13 @@ mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
 mysql> exit
 ```
 
-#### Load Time Zones
+### Load Time Zones
 
 ```text
 $ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root -p mysql
 ```
 
-#### Install PHP
+### Install PHP
 
 ```text
 $ sudo add-apt-repository ppa:ondrej/php
@@ -63,7 +61,7 @@ $ sudo apt upgrade
 $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-common php7.3-cli php7.3-fpm php7.3-pdo php7.3-mysql php7.3-zip php7.3-gd php7.3-mbstring php7.3-curl php7.3-bcmath php7.3-json php7.3-xml php7.3-xmlrpc php7.3-gd php7.3-imagick php7.3-dev php7.3-imap php7.3-opcache php7.3-soap php7.3-zip php7.3-intl -y
 ```
 
-#### Configure Apache2
+### Configure Apache2
 
 ```text
 $ sudo nano /etc/apache2/mods-enabled/dir.conf
@@ -87,7 +85,7 @@ $ sudo systemctl restart apache2
 $ sudo systemctl status apache2
 ```
 
-#### Configure PHP
+### Configure PHP
 
 ```text
 $ sudo nano /etc/php/7.3/apache2/php.ini
@@ -108,7 +106,7 @@ max_input_time = 1000
 $ sudo systemctl restart apache2
 ```
 
-#### Test PHP
+### Test PHP
 
 ```text
 $ nano /var/www/html/info.php
@@ -126,7 +124,7 @@ $ nano /var/www/html/info.php
 $ rm /var/www/html/info.php
 ```
 
-#### Install Composer
+### Install Composer
 
 ```text
 $ sudo apt update
@@ -149,7 +147,7 @@ $ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Ins
 $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
-#### Install NVM
+### Install NVM
 
 ```text
 $ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
@@ -164,7 +162,7 @@ $ nvm ls-remote
 $ nvm install v12.18.4
 ```
 
-#### Install ZendServer \(PHP 7.3\)
+### Install ZendServer \(PHP 7.3\)
 
 ```text
 $ sudo ./install_zs.sh 7.3
@@ -177,13 +175,13 @@ $ echo 'export PATH=$PATH:/usr/local/zend/bin' >> $HOME/.bashrc
 $ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/zend/lib' >> $HOME/.bashrc
 ```
 
-#### Uninstall zendServer
+### Uninstall zendServer
 
 ```text
 $ sudo /usr/local/zend/bin/uninstall.sh
 ```
 
-#### Manually Uninstall zendServer
+### Manually Uninstall zendServer
 
 ```text
 $ sudo apt-get remove `dpkg -l | grep zend | grep ^ii | awk '{print $2}'`
