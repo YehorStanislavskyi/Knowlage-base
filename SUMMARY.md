@@ -4,6 +4,7 @@
 
 ## linux
 
+* [ubuntu settings](linux/ubuntu-settings.md)
 * [install lamp](linux/install-lamp.md)
 * [install gitbook](linux/install-gitbook.md)
 
