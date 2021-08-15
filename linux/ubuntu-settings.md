@@ -1,10 +1,25 @@
-# ubuntu settings
+
+
+# стандартная настройка новой машины на убунту + gnome 
+
+## уставнока gnome-tweak-tolls
+
+```
+sudo apt-get install gnome-tweak-tool
+```
 
 ## NUM LOCK при старте системы 
 
 ```text
-sudo apt-get update
-sudo apt-get -y install numlockx
-sudo sed -i 's|^exit 0.*$|# Numlock enable\n[ -x /usr/bin/numlockx ] \&\& numlockx on\n\nexit 0|' /etc/init.d/rc.local
+org.gnome.desktop.peripherals.keyboard remember-numlock-state true
 ```
 
+## тема иконок papirus
+
+```
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt install papirus-icon-theme
+```
+
+В tweak-tools выбрать их!
+ 	
