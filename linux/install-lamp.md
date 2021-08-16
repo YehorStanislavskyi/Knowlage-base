@@ -6,11 +6,7 @@ description: 'работает на  убунте 18.04, на 19.04 - и дал�
 
 ## Install LAMP
 
-### Install utils
-
-```text
-Install Apache2.4 Web Server
-```
+### Install Apache2.4 Web Server
 
 ```text
 $ sudo apt update
