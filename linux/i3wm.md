@@ -26,6 +26,9 @@ echo "Bar launched..."
 
 
 ## i3- Rounded-corners
-test
+Установка  I3-rounded-corners https://github.com/terroo/i3-radius
+```
+
+```
 
 
