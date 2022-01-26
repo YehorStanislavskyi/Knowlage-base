@@ -26,6 +26,6 @@ echo "Bar launched..."
 
 
 ## i3- Rounded-corners
-
+test
 
 
