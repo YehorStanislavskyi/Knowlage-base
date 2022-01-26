@@ -1,6 +1,6 @@
 # i3wm
 
-## **Polybar**&#x20;
+## **Polybar**
 
 Решение для 2 мониторов (пересмотреть, не самое правильное решение )
 
@@ -20,15 +20,13 @@ polybar main &
 polybar no-main;
 
 echo "Bar launched..."
-
 ```
-
-
 
 ## i3- Rounded-corners
-Установка  I3-rounded-corners https://github.com/terroo/i3-radius
-```
+
+Установка I3-rounded-corners&#x20;
+
+https://github.com/terroo/i3-radius
 
 ```
-
-
+```
