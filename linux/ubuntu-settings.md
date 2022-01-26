@@ -3,7 +3,7 @@
 ## базовые утилиты&#x20;
 
 ```bash
-$ sudo apt-get install git  curl zip gnome-tweak-tool ranger vim flameshot htop telegram-desktop unzip -y
+$ sudo apt-get install git  curl zip gnome-tweak-tool ranger nvim flameshot htop telegram-desktop unzip -y
 ```
 
 
