@@ -26,6 +26,7 @@ fdisk /dev/sda → n → w
 ## create zpool data with:
 
 ```
+
  zpool create -f -o cachefile=none -o ashift=12  data mirror /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-0f5f5f55904e46d9881f30b5a5931a15-crypt-0 /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-237b9e2eaae54dfc8c2b189f24fab6e0-crypt-3 mirror /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-418459e9bbc646e7af20625bd85956b5-crypt-2 /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-a938fe3f94554dbf8b1c412d538e1bcd-crypt-1
  
 ```
