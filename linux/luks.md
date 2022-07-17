@@ -37,6 +37,7 @@ ls -al /dev/disk/by-uuid/
  crypt-3 /dev/disk/by-uuid/b0c2c60f-5130-46d0-835b-9e43d0fd1ec6  none luks,noauto
 
 # create zfs mountpoint
+
 ```
  zfs set mountpoint=/var/lib/vz data
 ```
