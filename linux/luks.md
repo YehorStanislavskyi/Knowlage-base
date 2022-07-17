@@ -26,10 +26,13 @@ fdisk /dev/sda → n → w
 #create zpool data with:
 ```
  zpool create -f -o cachefile=none -o ashift=12  data mirror /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-0f5f5f55904e46d9881f30b5a5931a15-crypt-0 /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-237b9e2eaae54dfc8c2b189f24fab6e0-crypt-3 mirror /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-418459e9bbc646e7af20625bd85956b5-crypt-2 /dev/disk/by-id/dm-uuid-CRYPT-LUKS2-a938fe3f94554dbf8b1c412d538e1bcd-crypt-1
+```
 # fil /etc/crypttab with 
+
 ```
 ls -al /dev/disk/by-uuid/
 ```
+
 # <target name>  <source device>    <key file>  <options>
  crypt-0 /dev/disk/by-uuid/3df047b1-cfda-4048-a0cd-c8c999807a52  none luks,noauto
  crypt-1 /dev/disk/by-uuid/42bbae6a-bb13-4d48-99a3-cee54c011ac5  none luks,noauto
